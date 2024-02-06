@@ -1,10 +1,7 @@
-public abstract class Prototipo {
-    private int valorInicial;
-    private int paso;
+public abstract class Prototipo <T extends Number>{
+    public abstract T siguienteNumero();
 
-    public abstract void reiniciarSerie();
+    public abstract void establecerValorInicial(T number);
 
-    public abstract void setValorInicial();
-
-    public abstract void siguienteValor();
+    public  abstract void reiniciarSerie();
 }
